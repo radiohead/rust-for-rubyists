@@ -1,22 +1,16 @@
 #[test]
 fn test_div_by_three() {
-  if div_by_three(1) {
-    fail!("One is not divisible by three!");
-  }
+  assert!(!div_by_three(1), "One is not divisible by three!");
 }
 
 #[test]
 fn test_div_by_five() {
-  if div_by_five(3) {
-   fail!("Three is not divisible by five!");
-  }
+  assert!(!div_by_five(3), "Three is not divisible by five!");
 }
 
 #[test]
 fn test_div_by_fifteen() {
-   if div_by_fifteen(14) {
-    fail!("Fourteen is not divisible by fifteen!");
-   }
+  assert!(!div_by_fifteen(14), "Fourteen is not divisible by fifteen!");
 }
 
 fn div_by_three(num: int) -> bool {
